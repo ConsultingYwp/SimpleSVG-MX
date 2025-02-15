@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="ywp consulting.simplesvg.Simplesvg"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
+    <name>Simplesvg</name>
+    <description>create simple object from svg</description>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="objectlist" type="datasource" isList="true" required="false">
+                <caption>Data source</caption>
+                <description />
+            </property>
+            <property key="onclickobject" type="action" required="false" dataSource="objectlist">
+                <caption>On click action</caption>
+                <description />
+            </property>
+            <property key="attributehtml" type="attribute" required="false" dataSource="objectlist">
+                <caption>HTML attribute</caption>
+                <description>The attribute of the data source.</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="bgImage" type="image" required="false">
+                <caption>Background Image</caption>
+                <description>Image shown blurred in a background</description>
+            </property>
+            <property key="width" type="string" required="false">
+                <caption>width</caption>
+                <description>Width</description>
+            </property>
+            <property key="height" type="string" required="false">
+                <caption>height</caption>
+                <description>height</description>
+            </property>
+            <property key="viewBox" type="string" required="false">
+                <caption>viewBox</caption>
+                <description>viewBox</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
